@@ -1,8 +1,104 @@
-body{
-        background-color: rgb(90, 255, 255);
-
+/* Fundo e texto geral */
+body {
+  margin: 0;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background-color: aquamarine;
+  color: #333;
 }
-h1{
-    font-style: italic;
-    color:rgb(224, 129, 62)
+
+/* Cabeçalho com menu de navegação */
+header {
+  background-color: #ff0000;
+  padding: 15px;
+  text-align: center;
+}
+
+nav a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Título principal */
+h1 {
+  font-size: 36px;
+  color: #d40000;
+  font-style: italic;
+  text-align: center;
+  margin-top: 30px;
+}
+
+/* Subtítulo */
+h2 {
+  font-size: 28px;
+  color: #555;
+  border-bottom: 2px solid #d40000;
+  padding-bottom: 5px;
+  margin-top: 40px;
+}
+
+/* Seção menor */
+h3 {
+  font-size: 22px;
+  color: #777;
+  margin-top: 30px;
+  font-style: oblique;
+}
+
+/* Parágrafos */
+p {
+  color: #3b3b3b;
+  font-size: 18px;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 20px auto;
+  text-align: justify;
+}
+
+/* Imagens */
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto 20px auto;
+  border-radius: 10px;
+}
+
+/* Listas */
+ul {
+  list-style-type: disc;
+  padding-left: 40px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+li {
+  margin-bottom: 5px;
+}
+
+/* Botão animado */
+.botao {
+  background-color: #d40000;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  display: inline-block;
+  margin: 20px auto;
+}
+
+.botao:hover {
+  background-color: #ff1a1a;
+  transform: scale(1.05);
 }
