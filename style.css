@@ -7,8 +7,8 @@ body {
   color: #333;
 }
 
-
-header {/* Cabeçalho com menu de navegação */
+/* Cabeçalho com menu de navegação */
+header {
   background-color: #ff0000;
   padding: 15px;
   text-align: center;
@@ -53,24 +53,7 @@ h3 {
 
 /* Parágrafos */
 p {
-  color: #3b3b3b;}
-  
-  /* Cabeçalho com menu de navegação */
-header {
-  background-color: #ff0000;
-  padding: 15px;
-  text-align: center;
-}
-
-nav a {
-  color: white;
-  margin: 0 15px;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-nav a:hover {
-  text-decoration: underline;
+  color: #3b3b3b;
   font-size: 18px;
   line-height: 1.6;
   max-width: 800px;
@@ -88,9 +71,7 @@ img {
 }
 
 /* Listas */
-ul {<!-- Links internos do site -->
-      <a href="index.html">Início</a>
-      <a href="Carros.cont.html">Página 2</a>
+ul {
   list-style-type: disc;
   padding-left: 40px;
   max-width: 800px;
@@ -104,24 +85,7 @@ li {
 /* Botão animado turbinado */
 .botao {
   background: linear-gradient(45deg, #d40000, #ff1a1a);
-  color: white;/* Cabeçalho com menu de navegação */
-header {
-  background-color: #ff0000;
-  padding: 15px;
-  text-align: center;
-}
-
-nav a {
   color: white;
-  margin: 0 15px;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-nav a:hover {
-  text-decoration: underline;
-}
-
   border: none;
   padding: 14px 28px;
   font-size: 18px;
@@ -137,7 +101,7 @@ nav a:hover {
   margin: 20px auto;
 }
 
-/* Brilho animado */
+/* Brilho animado no botão */
 .botao::before {
   content: "";
   position: absolute;
@@ -151,19 +115,18 @@ nav a:hover {
   filter: blur(4px);
 }
 
-/* Quando hover passa o brilho */
+/* Efeito ao passar o mouse no botão */
 .botao:hover::before {
   left: 125%;
 }
 
-/* Hover efeito de crescimento */
 .botao:hover {
   background: linear-gradient(45deg, #ff1a1a, #d40000);
   transform: scale(1.1);
   box-shadow: 0 8px 20px rgba(255, 26, 26, 0.8);
 }
 
-/* Pulsar suave */
+/* Animação pulsante do botão */
 @keyframes pulse {
   0%, 100% {
     box-shadow: 0 6px 15px rgba(212, 0, 0, 0.6);
@@ -172,8 +135,12 @@ nav a:hover {
     box-shadow: 0 8px 25px rgba(255, 26, 26, 0.8);
   }
 }
-footer{
-   background-color: #ff0000;
+
+/* Rodapé */
+footer {
+  background-color: #ff0000;
   padding: 15px;
   text-align: center;
+  color: white;
+  margin-top: 50px;
 }
