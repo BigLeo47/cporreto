@@ -82,23 +82,57 @@ li {
   margin-bottom: 5px;
 }
 
-/* Botão animado */
+/* Botão animado turbinado */
 .botao {
-  background-color: #d40000;
+  background: linear-gradient(45deg, #d40000, #ff1a1a);
   color: white;
   border: none;
-  padding: 12px 24px;
-  font-size: 16px;
+  padding: 14px 28px;
+  font-size: 18px;
   font-weight: bold;
-  border-radius: 8px;
+  border-radius: 12px;
   cursor: pointer;
-  transition: transform 0.3s ease, background-color 0.3s ease;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 6px 15px rgba(212, 0, 0, 0.6);
+  position: relative;
+  overflow: hidden;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  animation: pulse 2.5s infinite;
   display: inline-block;
   margin: 20px auto;
 }
 
+/* Brilho animado */
+.botao::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -75%;
+  width: 50%;
+  height: 200%;
+  background: rgba(255, 255, 255, 0.5);
+  transform: rotate(25deg);
+  transition: left 0.5s ease;
+  filter: blur(4px);
+}
+
+/* Quando hover passa o brilho */
+.botao:hover::before {
+  left: 125%;
+}
+
+/* Hover efeito de crescimento */
 .botao:hover {
-  background-color: #ff1a1a;
-  transform: scale(1.05);
+  background: linear-gradient(45deg, #ff1a1a, #d40000);
+  transform: scale(1.1);
+  box-shadow: 0 8px 20px rgba(255, 26, 26, 0.8);
+}
+
+/* Pulsar suave */
+@keyframes pulse {
+  0%, 100% {
+    box-shadow: 0 6px 15px rgba(212, 0, 0, 0.6);
+  }
+  50% {
+    box-shadow: 0 8px 25px rgba(255, 26, 26, 0.8);
+  }
 }
