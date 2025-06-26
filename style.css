@@ -53,7 +53,9 @@ h3 {
 
 /* Parágrafos */
 p {
-  color: #3b3b3b;/* Cabeçalho com menu de navegação */
+  color: #3b3b3b;}
+  
+  /* Cabeçalho com menu de navegação */
 header {
   background-color: #ff0000;
   padding: 15px;
