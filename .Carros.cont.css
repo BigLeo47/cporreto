@@ -1,3 +1,54 @@
-body{
-    background-color: aqua;
+/* Fundo e texto geral */
+body {
+  margin: 0;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background-color: aquamarine;
+  color: #333;
+}
+
+/* Cabeçalho com menu de navegação */
+header {
+  background-color: #ff0000;
+  padding: 15px;
+  text-align: center;
+}
+
+nav a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Título principal */
+h1 {
+  font-size: 36px;
+  color: #d40000;
+  font-style: italic;
+  text-align: center;
+  margin-top: 30px;
+}
+
+/* Parágrafos */
+p {
+  color: #3b3b3b;
+  font-size: 18px;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 20px auto;
+  text-align: justify;
+}
+
+/* Rodapé */
+footer {
+  background-color: #ff0000;
+  padding: 15px;
+  text-align: center;
+  color: white;
+  margin-top: 50px;
 }
