@@ -134,3 +134,63 @@ li {
   transform: scale(1.1);
   box-shadow: 0 8px 20px rgba(255, 26, 26, 0.8);
 }
+
+/* Animação pulsante do botão */
+@keyframes pulse {
+  0%, 100% {
+    box-shadow: 0 6px 15px rgba(212, 0, 0, 0.6);
+  }
+  50% {
+    box-shadow: 0 8px 25px rgba(255, 26, 26, 0.8);
+  }
+}
+
+/* Rodapé */
+footer {
+  background-color: #ff0000;
+  padding: 15px;
+  text-align: center;
+  color: white;
+  margin-top: 50px;
+  animation: surgirRodape 1s ease forwards;
+  opacity: 0;
+  animation-delay: 1s;
+}
+
+/* ANIMAÇÕES PERSONALIZADAS */
+
+/* Título com entrada animada */
+@keyframes entrarZoom {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* Fade nos parágrafos */
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+/* Imagem com flutuação */
+@keyframes flutuar {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-8px);
+  }
+}
+
+/* Rodapé surgindo suavemente */
+@keyframes surgirRodape {
+  to {
+    opacity: 1;
+  }
+}
